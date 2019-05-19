@@ -63,13 +63,13 @@ function subscribe(cb) {
       return;
     }
 
-    topic.createSubscription(subscriptionName, (err, sub) => {
+    const subscription = topic.subscription(subscriptionName);
+
+    subscription.get({ autoCreate: true }, function(err) {
       if (err) {
         cb(err);
         return;
       }
-
-      subscription = sub;
 
       // Listen to and handle message and error events
       subscription.on('message', handleMessage);
