@@ -13,7 +13,9 @@
   "scripts": {
     "lint": "eslint '**/*.js'",
     "ava": "ava -s -t 30s --tap \"**/*.test.js\"",
-    "test": "npm run lint && npm run ava"
+    "test": "npm run lint && npm run ava",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@google-cloud/connect-datastore": "^2.0.1",
@@ -40,7 +42,8 @@
     "pug": "^2.0.3",
     "request": "^2.83.0",
     "uglify-js": "^3.3.12",
-    "winston": "^2.4.0"
+    "winston": "^2.4.0",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "^3.0.0",
@@ -53,5 +56,6 @@
     "proxyquire": "^2.0.0",
     "sinon": "^7.0.0",
     "supertest": "^4.0.0"
-  }
+  },
+  "snyk": true
 }
