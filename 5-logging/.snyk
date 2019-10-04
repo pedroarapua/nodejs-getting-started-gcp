@@ -1,0 +1,54 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - '@google-cloud/datastore > google-gax > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > google-auth-library > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/datastore > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/trace-agent > @google-cloud/common > teeny-request > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/trace-agent > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/datastore > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > google-gax > google-auth-library > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/debug-agent > @google-cloud/common > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/datastore > google-gax > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/debug-agent > @google-cloud/common > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/debug-agent > @google-cloud/common > google-auth-library > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > @google-cloud/common-grpc > @google-cloud/common > google-auth-library > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/datastore > google-gax > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > google-gax > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > @google-cloud/common-grpc > @google-cloud/common > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/storage > gcs-resumable-upload > google-auto-auth > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/storage > @google-cloud/common > google-auto-auth > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > google-gax > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > google-gax > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > @google-cloud/common-grpc > @google-cloud/common > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
+    - '@google-cloud/logging-winston > @google-cloud/logging > @google-cloud/common-grpc > @google-cloud/common > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T08:18:48.599Z'
