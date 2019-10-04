@@ -1,0 +1,64 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - '@google-cloud/datastore > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/datastore > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/datastore > google-gax > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libcipm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/datastore > google-auth-library > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > libnpmpublish > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libnpm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - npm > libcipm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/datastore > google-gax > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/datastore > google-gax > google-auth-library > gcp-metadata > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/storage > @google-cloud/common > google-auto-auth > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
+    - '@google-cloud/storage > gcs-resumable-upload > google-auto-auth > google-auth-library > gtoken > gaxios > https-proxy-agent':
+        patched: '2019-10-04T01:00:17.565Z'
