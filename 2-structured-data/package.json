@@ -26,7 +26,9 @@
     "start": "node app.js",
     "test": "repo-tools test app && ava -t 30s --tap test/*.test.js",
     "e2e": "repo-tools test deploy && E2E_TESTS=True ava -t 30s --tap test/*.test.js",
-    "cover": "nyc --cache npm test; nyc report --reporter=html"
+    "cover": "nyc --cache npm test; nyc report --reporter=html",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@google-cloud/datastore": "^4.0.0",
@@ -36,12 +38,14 @@
     "nconf": "^0.10.0",
     "prompt": "^1.0.0",
     "pug": "^2.0.3",
-    "uglify-js": "^3.4.9"
+    "uglify-js": "^3.4.9",
+    "snyk": "^1.231.0"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "^3.0.0",
     "ava": "^0.25.0",
     "proxyquire": "^2.1.0",
     "sinon": "^7.0.0"
-  }
+  },
+  "snyk": true
 }
