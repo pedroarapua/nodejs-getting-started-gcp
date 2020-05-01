@@ -27,7 +27,9 @@
     "test": "repo-tools test app && ava -t 30s --tap test/*.test.js",
     "e2e": "echo Testing deployment at $TEST_URL; ava -T 60s --tap test/*.test.js",
     "cover": "nyc --cache npm test; nyc report --reporter=html",
-    "init-cloudsql": "node books/model-cloudsql.js"
+    "init-cloudsql": "node books/model-cloudsql.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@google-cloud/datastore": "^4.0.0",
@@ -53,7 +55,8 @@
     "pug": "^2.0.3",
     "request": "^2.88.0",
     "uglify-js": "^3.4.9",
-    "winston": "^2.4.4"
+    "winston": "^2.4.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "^3.0.0",
@@ -61,5 +64,6 @@
     "proxyquire": "^1.8.0",
     "supertest": "^4.0.0",
     "sinon": "^4.5.0"
-  }
+  },
+  "snyk": true
 }
