@@ -35,7 +35,7 @@
     "lodash": "^4.17.11",
     "nconf": "^0.10.0",
     "prompt": "^1.0.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "uglify-js": "^3.4.9"
   },
   "devDependencies": {
